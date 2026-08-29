@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Código Divino: estudio visual y didáctico para comprender la Biblia con claridad.">
+  <title>Código Divino | Comprende la Biblia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Roboto+Serif:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--brown:#3f3025;--brown2:#644823;--cream:#f4edda;--gold:#ffd21c;--green:#20b33a;--ink:#24211e;--muted:#615b55;--white:#fff;--shadow:0 14px 40px rgba(40,27,16,.14)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.55;background:#fff}img{display:block;max-width:100%;height:auto}a{text-decoration:none}.wrap{width:min(1100px,calc(100% - 36px));margin:auto}.section{padding:72px 0}.center{text-align:center}.eyebrow{color:#a86f16;font-weight:800;text-transform:uppercase;letter-spacing:.09em;font-size:.8rem}.title,h1,h2,h3{font-family:"Roboto Serif",Georgia,serif;line-height:1.14}.title{font-size:clamp(2rem,5vw,3.2rem);margin:10px 0 18px}.lead{font-size:clamp(1rem,2.2vw,1.25rem);max-width:760px;margin:0 auto 28px;color:var(--muted)}
+    .hero{min-height:700px;display:grid;place-items:center;text-align:center;color:#fff;padding:58px 0 70px;background:linear-gradient(rgba(44,30,20,.91),rgba(63,48,37,.92)),url('assets/17.jpg') center/cover}.brand{font:700 clamp(2.7rem,8vw,5.5rem)/1 "Roboto Serif",serif;color:var(--gold);letter-spacing:.04em;margin:0}.hero h1{max-width:920px;margin:18px auto;font-size:clamp(1.55rem,4vw,2.65rem);text-transform:uppercase}.hero p{max-width:760px;margin:0 auto 24px;font-size:clamp(1rem,2vw,1.25rem)}.mockup{width:min(560px,94%);margin:0 auto -10px;filter:drop-shadow(0 22px 18px rgba(0,0,0,.27))}.btn{display:inline-flex;justify-content:center;align-items:center;background:var(--green);color:#fff;padding:17px 28px;border-radius:14px;font-weight:800;box-shadow:0 10px 26px rgba(32,179,58,.28);transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
+    .cream{background:var(--cream)}.dark{background:var(--brown);color:#fff}.dark .lead{color:#eee}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}.card{background:#fff;border-radius:18px;padding:24px;box-shadow:var(--shadow);border:1px solid rgba(83,57,34,.08)}.card h3{margin:15px 0 7px;font-size:1.25rem}.card p{margin:0;color:var(--muted)}.card img{border-radius:12px;width:100%;aspect-ratio:4/3;object-fit:contain;background:#f9f6ef}.checklist{list-style:none;padding:0;max-width:760px;margin:28px auto}.checklist li{padding:12px 16px 12px 46px;margin:10px 0;background:#fff;border-radius:12px;position:relative;box-shadow:0 5px 16px rgba(40,27,16,.06)}.checklist li:before{content:'✓';position:absolute;left:17px;color:var(--green);font-weight:900}.product-card{background:var(--brown2);color:#fff}.product-card p{color:#f3eee8}.audience{grid-template-columns:repeat(4,1fr)}.audience .card{text-align:center}.audience img{aspect-ratio:1/1;object-fit:cover}
+    .benefits{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:850px;margin:32px auto}.benefit{padding:20px;background:#fff;border-left:5px solid var(--gold);border-radius:12px;box-shadow:var(--shadow);font-weight:700}.bonus{grid-template-columns:repeat(5,1fr)}.bonus .card{padding:18px}.bonus strong{color:#a26a08}.strike{text-decoration:line-through;color:#777}.free{color:var(--green);font-weight:900}.proof{grid-template-columns:repeat(4,1fr)}.proof img{border-radius:16px;box-shadow:var(--shadow)}
+    .offer{background:linear-gradient(135deg,#2d2119,#5c4331);color:#fff}.offer-box{width:min(790px,100%);margin:auto;text-align:center;padding:38px;border:2px solid var(--gold);border-radius:24px;background:rgba(0,0,0,.13)}.price{font:700 clamp(3rem,10vw,6rem)/1 "Roboto Serif",serif;color:#48e85f;margin:16px 0}.offer-list{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;text-align:left;max-width:660px;margin:24px auto}.offer-list div:before{content:'✓';color:#48e85f;font-weight:900;margin-right:8px}.guarantee{display:grid;grid-template-columns:220px 1fr;align-items:center;gap:36px;max-width:850px;margin:auto}.guarantee img{max-height:200px;margin:auto}.faq{max-width:820px;margin:30px auto 0}.faq details{border:1px solid #ded7cf;border-radius:12px;margin:12px 0;background:#fff}.faq summary{cursor:pointer;padding:18px 20px;font-weight:800}.faq p{padding:0 20px 18px;margin:0;color:var(--muted)}footer{text-align:center;padding:28px;background:#211a15;color:#ddd;font-size:.85rem}.sticky{position:fixed;z-index:10;left:14px;right:14px;bottom:12px;display:none}.sticky .btn{width:100%}
+    @media(max-width:900px){.grid,.bonus{grid-template-columns:repeat(2,1fr)}.audience,.proof{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:620px){.section{padding:52px 0}.hero{min-height:auto;padding-top:40px}.grid,.bonus,.benefits,.offer-list{grid-template-columns:1fr}.audience,.proof{grid-template-columns:repeat(2,1fr);gap:12px}.card{padding:17px}.offer-box{padding:28px 18px}.guarantee{grid-template-columns:1fr;text-align:center}.sticky{display:block}body{padding-bottom:76px}}
+  </style>
+</head>
+<body>
+  <!-- Cole o Pixel da Meta imediatamente abaixo desta linha quando ele estiver disponível. -->
+  <header class="hero">
+    <div class="wrap">
+      <p class="brand">CÓDIGO DIVINO</p>
+      <h1>Comprende la Biblia de principio a fin con claridad, profundidad y poder espiritual</h1>
+      <img class="mockup" src="assets/mockup.webp" alt="Colección digital Código Divino">
+      <p>Un estudio visual y didáctico que revela los misterios y enseñanzas de toda la Biblia de una manera clara, organizada y accesible.</p>
+      <a class="btn" href="https://pay.kiwify.com/2CLHYRi" target="_blank" rel="noopener">QUIERO COMPRENDER LA BIBLIA</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section cream"><div class="wrap center">
+      <span class="eyebrow">Una nueva forma de estudiar</span><h2 class="title">¿Qué es CÓDIGO DIVINO?</h2>
+      <p class="lead">Es un material exclusivo que te lleva a través de toda la historia de la Biblia con bosquejos visuales, ilustraciones impactantes y explicaciones claras, para ayudarte a entender y aplicar la Palabra de Dios como nunca antes.</p>
+      <h3>Este material es para ti si:</h3>
+      <ul class="checklist center"><li>Quieres comprender verdaderamente cada capítulo y versículo.</li><li>Quieres enseñar a otros de manera didáctica y espiritual.</li><li>Buscas una forma visual y práctica de memorizar historias y enseñanzas.</li><li>Deseas aprender sobre la vida y enseñanzas de Jesús de forma clara.</li><li>Te frustras al leer la Biblia sin entender su mensaje profundo.</li></ul>
+      <a class="btn" href="https://pay.kiwify.com/2CLHYRi" target="_blank" rel="noopener">SÍ, QUIERO</a>
+    </div></section>
+
+    <section class="section"><div class="wrap center"><h2 class="title">¿Qué incluye CÓDIGO DIVINO?</h2><p class="lead">Una biblioteca espiritual completa con estudios visuales, devocionales y explicaciones versículo por versículo.</p>
+      <div class="grid">
+        <article class="card product-card"><img src="assets/07.png" alt="Bosquejos de Josué"><h3>170 bosquejos de Josué</h3><p>Resúmenes temáticos con enseñanzas, aplicaciones y oraciones.</p></article>
+        <article class="card product-card"><img src="assets/08.png" alt="30 días de oración"><h3>30 días de oración</h3><p>Una guía devocional basada en los cinco primeros libros de la Biblia.</p></article>
+        <article class="card product-card"><img src="assets/09.png" alt="Génesis versículo por versículo"><h3>Génesis</h3><p>Estudio práctico y espiritual de cada versículo con aplicaciones diarias.</p></article>
+        <article class="card product-card"><img src="assets/10.png" alt="Éxodo versículo por versículo"><h3>Éxodo</h3><p>Comprensión clara y edificante del mensaje de Éxodo.</p></article>
+        <article class="card product-card"><img src="assets/11.png" alt="Levítico versículo por versículo"><h3>Levítico</h3><p>Entiende el propósito de sus leyes, ofrendas y enseñanzas.</p></article>
+      </div>
+    </div></section>
+
+    <section class="section cream"><div class="wrap center"><h2 class="title">Ventajas de usar CÓDIGO DIVINO</h2><div class="benefits"><div class="benefit">Comprende la narrativa bíblica de forma organizada.</div><div class="benefit">Memoriza historias y enseñanzas con apoyo visual.</div><div class="benefit">Prepara clases, prédicas y discipulados con claridad.</div><div class="benefit">Aplica la Palabra de Dios a tu vida diaria.</div></div></div></section>
+
+    <section class="section"><div class="wrap center"><h2 class="title">¿Quién puede usarlo?</h2><div class="grid audience">
+      <article class="card"><img src="assets/12.png" alt="Profesores y pastores"><h3>Profesores y pastores</h3><p>Perfecto para clases, prédicas y discipulados.</p></article>
+      <article class="card"><img src="assets/13.png" alt="Estudiantes y nuevos creyentes"><h3>Estudiantes y nuevos creyentes</h3><p>Una forma sencilla y poderosa de aprender.</p></article>
+      <article class="card"><img src="assets/14.png" alt="Líderes de grupos"><h3>Líderes de grupos</h3><p>Una herramienta que transforma vidas.</p></article>
+      <article class="card"><img src="assets/15.png" alt="Familias"><h3>Familias</h3><p>Enseña a tus hijos de forma visual y memorable.</p></article>
+    </div></div></section>
+
+    <section class="section dark"><div class="wrap center"><span class="eyebrow" style="color:var(--gold)">Por tiempo limitado</span><h2 class="title">¡5 bonos exclusivos totalmente gratis!</h2><p class="lead">Complementa tu estudio y crecimiento espiritual con estos regalos.</p><div class="grid bonus">
+      <article class="card"><img src="assets/02.png" alt="Los 10 Mandamientos"><h3>Los 10 Mandamientos</h3><p>Historia y aplicación espiritual.</p><p><span class="strike">$10</span> <span class="free">GRATIS</span></p></article>
+      <article class="card"><img src="assets/03.png" alt="Los Milagros de Jesús"><h3>Los Milagros de Jesús</h3><p>Contexto, reflexión y lección espiritual.</p><p><span class="strike">$10</span> <span class="free">GRATIS</span></p></article>
+      <article class="card"><img src="assets/04.png" alt="Historias Bíblicas"><h3>Historias Bíblicas</h3><p>Para toda la familia.</p><p><span class="strike">$10</span> <span class="free">GRATIS</span></p></article>
+      <article class="card"><img src="assets/05.png" alt="Devocionales de Poder"><h3>Devocionales de Poder</h3><p>30 días para profundizar tu fe.</p><p><span class="strike">$10</span> <span class="free">GRATIS</span></p></article>
+      <article class="card"><img src="assets/06.png" alt="Manual de Interpretación Bíblica"><h3>Interpretación Bíblica</h3><p>Manual práctico para principiantes.</p><p><span class="strike">$10</span> <span class="free">GRATIS</span></p></article>
+    </div></div></section>
+
+    <section class="section cream"><div class="wrap center"><h2 class="title">¿Te has sentido perdido al leer la Biblia?</h2><p class="lead">Muchos creyentes intentan leerla, pero se frustran por no saber cómo entenderla o aplicarla. CÓDIGO DIVINO es la guía visual que te toma de la mano en cada etapa del conocimiento bíblico.</p><h3>Más de 4.000 cristianos ya están transformando su estudio bíblico</h3></div></section>
+
+    <section id="oferta" class="section offer"><div class="wrap"><div class="offer-box"><span class="eyebrow" style="color:var(--gold)">Precio especial de lanzamiento</span><h2 class="title">Llévate todo por solo</h2><div class="price">$4,90 USD</div><p>Puedes pagar en tu moneda local.</p><div class="offer-list"><div>170 bosquejos de Josué</div><div>Génesis versículo por versículo</div><div>Éxodo versículo por versículo</div><div>Levítico versículo por versículo</div><div>30 días de oración</div><div>5 bonos exclusivos</div><div>Acceso seguro y digital</div><div>Compatible con cualquier dispositivo</div></div><a class="btn" href="https://pay.kiwify.com/2CLHYRi" target="_blank" rel="noopener">QUIERO CÓDIGO DIVINO AHORA</a><p><small>Entrega inmediata por correo electrónico</small></p></div></div></section>
+
+    <section class="section"><div class="wrap"><div class="guarantee"><img src="assets/01.png" alt="Garantía de 7 días"><div><h2 class="title">Garantía incondicional de 7 días</h2><p>Si por cualquier motivo el contenido no cumple con lo prometido, tienes hasta 7 días para solicitar el reembolso completo, sin preguntas ni complicaciones.</p></div></div></div></section>
+
+    <section class="section cream"><div class="wrap"><div class="center"><h2 class="title">Preguntas frecuentes</h2></div><div class="faq">
+      <details><summary>¿Cómo recibiré el material?</summary><p>Después de confirmar el pago, recibirás un correo con acceso inmediato. Todo es 100% online.</p></details>
+      <details><summary>¿Y si el material no es lo que esperaba?</summary><p>Tienes 7 días de garantía incondicional para solicitar el reembolso.</p></details>
+      <details><summary>¿Necesito conocimientos previos?</summary><p>No. Fue diseñado para nuevos creyentes, estudiantes, líderes, padres y pastores.</p></details>
+      <details><summary>¿Puedo pagar en mi moneda local?</summary><p>Sí. En el pago podrás ver las opciones disponibles para tu país.</p></details>
+    </div></div></section>
+  </main>
+  <footer>© Código Divino. Todos los derechos reservados.</footer>
+  <div class="sticky"><a class="btn" href="https://pay.kiwify.com/2CLHYRi" target="_blank" rel="noopener">QUIERO CÓDIGO DIVINO</a></div>
+</body>
+</html>
